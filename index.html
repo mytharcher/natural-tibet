@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Tibet travelling tour guide" />
+
+<title>Natural Tibet</title>
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Duru+Sans" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css" />
+
+<style type="text/css">
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-webkit-text-size-adjust: none;
+}
+
+html,body{
+	margin: 0;
+	padding: 0;
+	border: none;
+	line-height: 1;
+	min-height:100%;
+}
+body{
+	color: #555;
+	font-size: 14px;
+	font-family:"Duru Sans",Arial,Helvetica,sans-serif;
+}
+figure{
+	display: block;
+}
+
+ul,ol,figure,form{
+	margin: 0;
+	padding: 0;
+}
+img{
+	vertical-align: middle;
+}
+
+*.fa,
+*.fa:before {
+  width: 1em;
+  text-align: center;
+}
+
+.scroll-row{
+	position: relative;
+}
+.container{
+	position: relative;
+	width: 80%;
+	min-width: 800px;
+	max-width: 1280px;
+	margin: auto;
+}
+.container-full{
+	width: 100%;
+}
+.container:after, .clear-fix:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.container header{
+	padding: 80px 0 50px 0;
+	text-align: center;
+}
+.container header h2{
+	margin: 0;
+	font-size: 2.5em;
+}
+.container header h2+p{
+	font-size: 1.2em;
+}
+
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+	z-index: 8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+#header{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	overflow: hidden;
+	background: rgba(255,255,255,.8);
+	box-shadow: 0 0 15px rgba(0,0,0,.2);
+
+	-webkit-transition: height .3s ease, line-height .3s ease;
+	-moz-transition: height .3s ease, line-height .3s ease;
+	-ms-transition: height .3s ease, line-height .3s ease;
+	transition: height .3s ease, line-height .3s ease;
+}
+#header.small{
+	height: 60px;
+	line-height: 60px;
+}
+#header .container{
+	height: 100%;
+}
+#header h1{
+	position: absolute;
+	left: 0;
+	height: 100%;
+	margin: 0;
+
+	-webkit-transition: font-size .3s ease;
+	-moz-transition: font-size .3s ease;
+	-ms-transition: font-size .3s ease;
+	transition: font-size .3s ease;
+}
+#header.small h1{
+	font-size: 1.8em;
+}
+#header a{
+	text-decoration: none;
+}
+#header h1 a{
+	color: #555;
+
+	-webkit-transition: color 1s ease, text-shadow .5s ease;
+	-moz-transition: color 1s ease, text-shadow .5s ease;
+	-ms-transition: color 1s ease, text-shadow .5s ease;
+	transition: color 1s ease, text-shadow .5s ease;
+}
+#header h1 a:hover{
+	text-shadow: 0 0 4px rgba(0,0,0,.3);
+
+	-webkit-animation-name: rainbow;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+
+	animation-name: rainbow;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+#header h1 small{
+	font-size: .5em;
+	font-weight: normal;
+	margin-left: 2em;
+}
+#header nav{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+#header nav ul{
+	/*width: 300px;*/
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#header nav li{
+	float: left;
+	list-style: none;
+	width: 120px;
+	height: 100%;
+}
+#header nav li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	color: #555;
+
+	-webkit-transition: background-color .3s ease-in-out, color .3s ease;
+	-moz-transition: background-color .3s ease-in-out, color .3s ease;
+	-ms-transition: background-color .3s ease-in-out, color .3s ease;
+	transition: background-color .3s ease-in-out, color .3s ease;
+}
+#header nav li.active a,
+#header nav li a:hover{
+	/*border-bottom: 5px solid #09e;*/
+	background-color: #09e;
+	color: #fff;
+}
+#header nav ul:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+#slider{
+	overflow: hidden;
+}
+#slider .container{
+	width: 100%;
+	max-width: 100%;
+}
+#slider .nivo-directionNav a{
+}
+#slider .nivo-directionNav i.fa{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 40px;
+	color: rgba(255,255,255,.5);
+
+	-webkit-transition: color .3s ease, font-size .3s ease;
+	-moz-transition: color .3s ease, font-size .3s ease;
+	-ms-transition: color .3s ease, font-size .3s ease;
+	transition: color .3s ease, font-size .3s ease;
+}
+#slider .nivo-directionNav a:hover i.fa{
+	font-size: 60px;
+	color: #fff;
+	text-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+#slider .nivo-controlNav{
+	position: absolute;
+	z-index: 6;
+	bottom: 0;
+	width: 100%;
+}
+#slider .nivo-control{
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	overflow: hidden;
+	margin: 0 .5em;
+	border-radius: 100%;
+	background: rgba(255,255,255,.3);
+	box-shadow: 0 0 2px rgba(0,0,0,.2);
+	text-indent: 100%;
+
+	-webkit-transition: background-color .3s ease;
+	-moz-transition: background-color .3s ease;
+	-ms-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+}
+#slider .nivo-control.active{
+	background: rgba(255,255,255,.8);
+}
+#slider .nivo-caption{
+	left: 50%;
+	top: 200px;
+	width: auto;
+	height: auto;
+	overflow: visible;
+}
+#slider .caption-inner{
+	position: absolute;
+	left: -400px;
+	width: 800px;
+	overflow: visible;
+}
+#slider-1-inner{
+	color: #fff;
+}
+#slider-1-inner h2{
+	position: absolute;
+	left: -100%;
+	opacity: 0;
+	font-size: 2em;
+	text-shadow: 1px 2px 3px rgba(0,0,0,.3);
+
+	-webkit-transition: left .5s ease, opacity .5s ease;
+	-moz-transition: left .5s ease, opacity .5s ease;
+	-ms-transition: left .5s ease, opacity .5s ease;
+	transition: left .5s ease, opacity .5s ease;
+}
+#slider-1-inner.captions-inner h2{
+	opacity: 1;
+	left: 0;
+}
+
+#team{
+
+}
+#team-list{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#team-list li{
+	position: relative;
+	float: left;
+	list-style: none;
+	width: 25%;
+	overflow: hidden;
+}
+#team-list li figure{
+	width: 100%;
+	height: 240px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#team-list li figure a{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 100%;
+
+	-webkit-transition: width .3s ease, height .3s ease;
+	-moz-transition: width .3s ease, height .3s ease;
+	-ms-transition: width .3s ease, height .3s ease;
+	transition: width .3s ease, height .3s ease;
+}
+#team-list li figure a:hover{
+	width: 160px;
+	height: 160px;
+}
+#team-list li figure img{
+	width: 100%;
+}
+#team-list li figcaption{
+	margin: 1em;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#team-list li figure:after{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+
+	-webkit-transition: margin-left .5s ease, border-width .5s ease;
+	-moz-transition: margin-left .5s ease, border-width .5s ease;
+	-ms-transition: margin-left .5s ease, border-width .5s ease;
+	transition: margin-left .5s ease, border-width .5s ease;
+}
+#team-list li.active figure:after{
+	margin-left: -20px;
+	border-bottom: 20px solid #bbb;
+	border-left: 20px solid #fff;
+	border-right: 20px solid #fff;
+}
+#team-list:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+#team-detail{
+	padding: 20px 0;
+	background: #ccc;
+	box-shadow: inset 0 0 10px rgba(0,0,0,.2);
+}
+#team-detail .container{
+	position: relative;
+	overflow: hidden;
+	color: #7f7f7f;
+}
+#team-detail-list{
+	position: relative;
+	width: 400%;
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+}
+#team-detail-list li{
+	position: relative;
+	float: left;
+	list-style: none;
+	width: 25%;
+	line-height: 1.5em;
+	opacity: 0;
+
+	-webkit-transition: opacity .5s ease;
+	-moz-transition: opacity .5s ease;
+	-ms-transition: opacity .5s ease;
+	transition: opacity .5s ease;
+}
+#team-detail-list li.active{
+	opacity: 1;
+}
+#team-detail-list li>i.fa{
+	position: absolute;
+	font-size: 3em;
+	color: #999;
+}
+#team-detail-list li>i.fa-quote-left{
+	left: 0;
+	top: 0;
+}
+#team-detail-list li>i.fa-quote-right{
+	right: 0;
+	bottom: 0;
+}
+#team-detail-list blockquote{
+	margin: 0;
+	padding: 0 60px;
+}
+#team-detail-list:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+#routines-list:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+#routines-list li{
+	position: relative;
+	float: left;
+	list-style: none;
+	width: 30%;
+	overflow: hidden;
+	margin-right: 5%;
+}
+#routines-list li:last-child{
+	margin-right: 0;
+}
+#routines-list li figure{
+	position: relative;
+	width: 100%;
+}
+#routines-list li figure img{
+	width: 100%;
+}
+#routines-list li figcaption{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 30px;
+	padding: 5px 10px;
+	background: rgba(255,255,255,.5);
+	/*color: #fff;*/
+
+	-webkit-transition: bottom .3s ease;
+	-moz-transition: bottom .3s ease;
+	-ms-transition: bottom .3s ease;
+	transition: bottom .3s ease;
+}
+#routines-list li:hover figcaption{
+	bottom: -100%;
+}
+#routines-list li .detail{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	background: rgba(0,0,0,.5);
+	color: rgba(255,255,255,.9);
+
+	-webkit-transition: left .3s ease;
+	-moz-transition: left .3s ease;
+	-ms-transition: left .3s ease;
+	transition: left .3s ease;
+}
+#routines-list li:hover .detail{
+	left: 0;
+}
+#routines-list li .detail h3{
+	margin: 0;
+}
+#routines-list li .detail dl{
+	margin: 10px 0;
+	line-height: 1.5em;
+}
+#routines-list li .detail dt{
+	float: left;
+	font-weight: bold;
+}
+#routines-list li .detail dt:after{
+	content: ":";
+	display: inline-block;
+	width: 1em;
+}
+#routines-list li .detail .learn-more{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+#routines-list li .detail .learn-more a{
+	display: inline-block;
+	padding: 15px 30px;
+	border-radius: 5px;
+	background: #fcc033;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#custom-routine{
+	margin-top: 50px;
+	padding: 40px 0;
+	background: #36be86;
+	text-align: center;
+	color: #fff;
+}
+#custom-routine h3{
+	margin-top: 0;
+	font-size: 2em;
+}
+#custom-routine p{
+	font-size: 1.2em;
+}
+#custom-routine .button-line{
+	margin: 30px 0 0 0;
+}
+#custom-routine .button-line a{
+	display: inline-block;
+	padding: 20px 50px;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #fff;
+}
+#custom-routine .button-line a:hover{
+	background: #fff;
+	color: #36be86;
+
+	-webkit-transition: background-color .3s ease, color .3s ease;
+	-moz-transition: background-color .3s ease, color .3s ease;
+	-ms-transition: background-color .3s ease, color .3s ease;
+	transition: background-color .3s ease, color .3s ease;
+}
+
+#gallery{
+	padding: 100px 0;
+	background: #333;
+	box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+}
+#photo-list{
+	max-width: 910px;
+	margin: auto;
+}
+#photo-list li{
+	float: left;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin: 0 2px 2px 0;
+}
+#photo-list li:nth-child(6){
+	margin-right: 0;
+}
+#photo-list figure{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#contact .comment-respond,#contact .contact-content{
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+#contact .container:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#contact .contact-content{
+	font-size: 110%;
+	line-height: 1.6em;
+}
+#contact input,#contact textarea{
+	width: 100%;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #d7d7d7;
+	font-size: 1.2em;
+	font-family: "Duru Sans",Arial,Helvetica,sans-serif;
+}
+#contact textarea{
+	height: 200px;
+}
+#contact button[type=submit]{
+	width: 200px;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	background: #09e;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#footer{
+	margin: 50px 0;
+}
+#footer .copyright{
+	text-align: center;
+}
+
+@media screen and (max-width: 1920px) {
+	#slider{
+		max-height: 960px;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	#slider{
+		max-height: 800px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	#slider{
+		max-height: 720px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	#slider{
+		max-height: 683px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#slider{
+		max-height: 640px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#slider{
+		max-height: 512px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.scroll-row .container{
+		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
+		padding: 0 15px;
+	}
+
+	#header{
+		height: 60px;
+		line-height: 60px;
+		background: #fff;
+	}
+	#header h1{
+		width: 100%;
+		text-align: center;
+	}
+	#header.small h1{
+		font-size: 2em;
+	}
+	#header h1 small{
+		display: none;
+	}
+	#header nav a.menu{
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		border-left: 1px solid #ccc;
+		font-size: 2em;
+		text-align: center;
+		color: #555;
+	}
+	#header nav ul{
+		display: none;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		height: auto;
+		box-shadow: 0 1px 5px rgba(0,0,0,.3);
+	}
+	#header nav.show ul{
+		display: block;
+	}
+	#header nav li{
+		height: 60px;
+	}
+	#header nav li a{
+		float: none;
+		background: #fff;
+	}
+
+	#slider{
+		padding-top: 60px;
+	}
+	#slider .nivo-caption{
+		top: 0;
+	}
+
+	#team-list li{
+		width: 50%;
+	}
+	#team-list li.active figure:after{
+		display: none;
+	}
+	#team-detail-list li>i{
+		display: none;
+	}
+	#team-detail-list li>blockquote{
+		padding: 0 10px;
+	}
+
+	#routines-list li{
+		width: 100%;
+	}
+
+	#photo-list li{
+		margin: 0;
+	}
+
+	#contact .contact-content,#contact .comment-respond{
+		float: none;
+		width: 100%;
+	}
+	#contact .comment-form-operation{
+		text-align: right;
+	}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="scroll-row" id="header">
+	<div class="container">
+		<h1><a href="/">Natural Tibet</a><small>Lead your amazing journey</small></h1>
+		<nav>
+			<ul>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#routine">Routine</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<div class="scroll-row" id="slider">
+	<div class="container container-full">
+		<div class="nivoSlider">
+			<img src="assets/img/potala-palace.jpg" width="100%" title="#slider-1" />
+			<img src="assets/img/lake-yang.jpg" width="100%" title="#slider-2" />
+			<img src="assets/img/highland.jpg" width="100%" title="#slide-3" />
+			<img src="assets/img/lake-ban.jpg" width="100%" title="#slide-4" />
+		</div>
+		<div class="nivo-captions">
+			<div id="slider-1">
+				<div id="slider-1-inner" class="caption-inner">
+				</div>
+			</div>
+			<div id="slider-2">
+				<div id="slider-2-inner" class="caption-inner">
+				</div>
+			</div>
+			<div id="slider-3">
+				<div id="slider-3-inner" class="caption-inner">
+				</div>
+			</div>
+			<div id="slider-4">
+				<div id="slider-4-inner" class="caption-inner">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="scroll-row" id="team">
+	<div class="container">
+		<header>
+			<h2>Our Passionful &amp; Professional Team</h2>
+			<p>We could be your best <b>Guide</b>, <b>Driver</b> and <b>Friend</b> in traveling</p>
+		</header>
+		<ul id="team-list">
+			<li class="active">
+				<figure>
+					<a href="#team-elena" rel="switchable"><img src="assets/img/Elena_small_lit.jpg" /></a>
+					<figcaption>Elena</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="#team-gera" rel="switchable"><img src="assets/img/Gera_lit.jpg" /></a>
+					<figcaption>Gerardo</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="#team-jun" rel="switchable"><img src="assets/img/Jun_lit.jpg" /></a>
+					<figcaption>Jun</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="#team-bob" rel="switchable"><img src="assets/img/Bob_lit.jpg" /></a>
+					<figcaption>Bob</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</div>
+	<div id="team-detail" class="container-full">
+		<div class="container">
+			<ul id="team-detail-list">
+				<li id="team-elena" class="active">
+					<i class="fa fa-quote-left"></i>
+					<blockquote>
+						<p>Born in March 26,1980(The Chinese Monkey Year).  She grew up in Qamdo, the eastern part of TAR. Her parents were teachers here before they retired and past.</p>
+						<p>Speaking in Chinese, English, Tibetan, and little bit Spanish.</p>
+						<p>Before working for tourism, she was a housewife working for family and son. Be an English guide since 2006, have most experience with Tibet, Xinjiang, Yunnan Pro. Also have lot knowledge of Tibetan Culture and Buddhism. She worked with many people from US, Germany, Holland, AUS, and Spainish also. Learning and studying in Tibetan Culture and History during winter time.</p>
+						<p>Who established Tibet-rainbow travel service.</p>
+						<p>She has good coordination ability with drivers, guides and clients. Not a very patient woman, but kind people. Also is Buddhism for all life.</p>
+					</blockquote>
+					<i class="fa fa-quote-right"></i>
+				</li>
+				<li id="team-gera">
+					<i class="fafa-quote-left"></i>
+					<blockquote>
+						<p>Born in September 24,1968(Chinese monkey year). Barcelona City, Spain.</p>
+						<p>Speak in Spanish, English and Chinese.</p>
+						<p>First time to China was in July 1997. Since that time he live in China and works in Trade bussiness  But gradually change job because he feel interested to know about all places in China and start to work in tourism in INOUT-CHINA travels... a group of friends agency specialized in overland and adventure trips include trek and hiking for Spanish market and some others for overland ....... Xinjiang, Tibet, Silk Road, Desert, Yunnan, Guizhou, Guangxi, Hunan, Canton, Fujian, Sichuan, Macao, Hongkong.... and countries around.</p>
+						<p>He knows very well all areas, and routes and people around.</p>
+						<p>Gerardo is the most active guy in Wang team. Nagging and wordy, but also enthusiastic and patient.</p>
+					</blockquote>
+					<i class="fa fa-quote-right"></i>
+				</li>
+				<li id="team-jun">
+					<i class="fa fa-quote-left"></i>
+					<blockquote>
+						<p>Born in Liuzhou city, September 24,1968.</p> 
+						<p>She works with the team of INOUT-CHINA and she is professional in GUIZHOU and GUANGXI, GUANGDONG and HAINAN areas and specially the SOUTH CHINA SEA.</p>
+						<p>She works special for Chinese oversea groups for cultural, festivals and overland tours. Also she coordinates the booking for plane-hotels and other services.</p>
+						<p>She knows areas and people.</p>
+						<p>She is friendly and cheerful, hard work and tender.</p>
+					</blockquote>
+					<i class="fa fa-quote-right"></i>
+				</li>
+				<li id="team-bob">
+					<i class="fa fa-quote-left"></i>
+					<blockquote>
+						<p>Born in July 17,1966 (The Chinese Horse Year).</p>
+						<p>Speak in perfect English and little Japanese, and Chinese also.</p>
+						<p>Professional official guide base in Guilin-Yangshuo</p>
+						<h3>Experience in tourism since 1997</h3>
+						<p>Organize and lead groups in Yunnan-Guizhou-Hunan-Guangxi ............ specialized in overland tours, hiking and cultural......... also lead groups if guest wants to contract the service by the way and day by day.</p>
+						<p>He knows perfectly all areas and good communication with local people and friends because his open mentality and friendship.</p>
+						<p>Uncle Bob just like a horse when he is working, but like a crazy when he has nothing to do. Nice and warm-hearted guy. Positive and eager to learn new things.</p>
+					</blockquote>
+					<i class="fa fa-quote-right"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="scroll-row" id="routine">
+	<div class="container">
+		<header>
+			<h2>Most Popular Routines</h2>
+		</header>
+		<ul id="routines-list">
+			<li>
+				<figure>
+					<img src="assets/img/potala-palace-small.jpg" />
+					<figcaption>Near Lasa, 3 days</figcaption>
+				</figure>
+				<div class="detail">
+					<h3>Lasa 3 days</h3>
+					<dl>
+						<dt>Via</dt>
+						<dd>Potala Palace, Jokhang, Lake Yang</dd>
+						<dt>Transportation</dt>
+						<dd>Hike</dd>
+						<dt>Suitable seasons</dt>
+						<dd>Full year</dd>
+					</dl>
+					<p class="learn-more"><a href="#contact" rel="scrollTo">Learn more</a></p>
+				</div>
+			</li>
+			<li>
+				<figure>
+					<img src="assets/img/lake-yang-small.jpg" />
+					<figcaption>Mt.Everest, 7 days</figcaption>
+				</figure>
+				<div class="detail">
+					<h3>Mt.Everest, 7 days</h3>
+					<dl>
+						<dt>Via</dt>
+						<dd>Lake Yang, Ricaze City, Dingri Town, Mt.Everest</dd>
+						<dt>Transportation</dt>
+						<dd>Car</dd>
+						<dt>Suitable seasons</dt>
+						<dd>Spring, Summer &amp; Autumn</dd>
+					</dl>
+					<p class="learn-more"><a href="#contact" rel="scrollTo">Learn more</a></p>
+				</div>
+			</li>
+			<li>
+				<figure>
+					<img src="assets/img/highland-small.jpg" />
+					<figcaption>Ali, 15 days</figcaption>
+				</figure>
+				<div class="detail">
+					<h3>Ali, 15 days</h3>
+					<dl>
+						<dt>Via</dt>
+						<dd>Ricaze City, Mt.Everest, Lake Ma, Mt.Gang</dd>
+						<dt>Transportation</dt>
+						<dd>Car</dd>
+						<dt>Suitable seasons</dt>
+						<dd>Spring, Summer &amp; Autumn</dd>
+					</dl>
+					<p class="learn-more"><a href="#contact" rel="scrollTo">Learn more</a></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="custom-routine" class="container-full">
+		<div class="container">
+			<h3>Need something different?</h3>
+			<p>We provide any customized routines including but not limited to, <i>Hiking</i>, <i>Bicycling</i> and <i>Self-Driving</i> and so on.</p>
+			<p class="button-line"><a href="#contact" rel="scrollTo">Tell us</a></p>
+		</div>
+	</div>
+</div>
+
+<div class="scroll-row" id="gallery">
+	<div class="container">
+		<ul id="photo-list" class="clear-fix">
+			<li>
+				<figure>
+					<a href="gallery/P1020525.jpg" rel="gallery" title="test photo"><img width="150" height="150" src="gallery/P1020525-150x150.jpg" class="attachment-thumbnail wp-post-image" alt="P1020525"></a>
+					<figcaption>test photo</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="gallery/P1080940.jpg" rel="gallery" title="another"><img width="150" height="150" src="gallery/P1080940-150x150.jpg" class="attachment-thumbnail wp-post-image" alt="P1080940"></a>
+					<figcaption>another</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="gallery/P1020594.jpg" rel="gallery" title="photo3"><img width="150" height="150" src="gallery/P1020594-150x150.jpg" class="attachment-thumbnail wp-post-image" alt="P1020594"></a>
+					<figcaption>photo3</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="gallery/P1080812.jpg" rel="gallery" title="Lake beside Montains"><img width="150" height="150" src="gallery/P1080812-150x150.jpg" class="attachment-thumbnail wp-post-image" alt="P1080812"></a>
+					<figcaption>Lake beside Montains</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="gallery/P1080918.jpg" rel="gallery" title="River through Highland"><img width="150" height="150" src="gallery/P1080918-150x150.jpg" class="attachment-thumbnail wp-post-image" alt="P1080918"></a>
+					<figcaption>River through Highland</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="gallery/P1080996.jpg" rel="gallery" title="Streamers"><img width="150" height="150" src="gallery/P1080996-150x150.jpg" class="attachment-thumbnail wp-post-image" alt="P1080996"></a>
+					<figcaption>Streamers</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="scroll-row" id="contact">
+	<div class="container">
+		<header><h2>Contact Us</h2></header>
+		<div class="contact-content">
+			<p>Anything about travelling to Tibet you could ask us by email.</p>
+		</div>
+		<div class="comment-respond">
+			<h3 class="comment-reply-title">Write your message:</h3>
+			<form action="//formspree.io/376125399@qq.com" method="post">
+				<p class="comment-form-author"><input type="email" name="email" required placeholder="Your Email" /></p>
+				<p class="comment-form-comment"><textarea name="message" required placeholder="Your Message"></textarea></p>
+				<p class="comment-form-operation"><button type="submit">Send</button></p>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="scroll-row" id="footer">
+	<div class="container">
+		<p class="copyright">&copy; Copyright since 2014. All rights reserved.</p>
+	</div>
+</div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+<script type="text/javascript" src="assets/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript">
+$(function () {
+	$('#header nav ul').onePageNav({
+		currentClass: 'active'
+	});
+
+	$('.nivoSlider').nivoSlider({
+		// effect: 'slideInRight',
+		pauseTime: 6000,
+		prevText: '<i class="fa fa-angle-left"></i>',
+		nextText: '<i class="fa fa-angle-right"></i>'
+	});
+
+	$('a[rel=scrollTo]').click(function (ev) {
+		ev.preventDefault();
+
+		$(window).scrollTo($(this.href.replace(/^[^#]*/g, '')), 500, {
+			axis: 'y'
+		});
+	});
+
+	$('#team-list a[rel=switchable]').click(function (ev) {
+		ev.preventDefault();
+
+		$('#team-list>li').removeClass('active');
+		$(this).parent().parent().addClass('active');
+
+		$('#team-detail-list>li').removeClass('active');
+		var target = $(this.href.replace(/^[^#]*/g, ''));
+		target.addClass('active');
+		// console.log($.scrollTo.config.easing);
+		target.parent().parent().scrollTo(target, 500, {
+			axis: 'x'
+		});
+	});
+
+	$(window).scroll(function (ev) {
+		var docElem = /webkit/i.test(navigator.userAgent) || document.compatMode == 'BackCompat' ? document.body : document.documentElement;
+		var header = $('#header');
+		if (docElem.scrollTop > header.height()) {
+			if (!header.hasClass('small')) {
+				header.addClass('small');
+			}
+		} else {
+			header.removeClass('small');
+		}
+	});
+
+	$('#gallery a[rel=gallery]').fancybox({
+		padding: 0,
+		closeBtn: false,
+		helpers: {
+			title: {
+				type: 'over'
+			}
+		}
+	});
+});
+</script>
+
+</body>
+</html>
